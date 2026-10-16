@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="et">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CesiumJS Kaart</title>
+
+        <script src="https://cesium.com/downloads/cesiumjs/releases/1.146/Build/Cesium/Cesium.js"></script>
+        <link rel="stylesheet" href="https://cesium.com/downloads/cesiumjs/releases/1.146/Build/Cesium/Widgets/widgets.css">
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="/">Avaleht</a>
+                <a href="/leaflet">LeafletJS</a>
+                <a href="/openlayers">OpenLayers</a>
+                <a href="/cesium">CesiumJS</a>
+                <a href="/comparison">Võrdlus</a>
+            </nav>
+        </header>
+
+        <main class="cesium-page">
+            <h1>CesiumJS Kaart</h1>
+
+            <div id="map_container">
+                <div class="map-toolbar">
+                    <button id="show-all" type="button">Näita kõiki objekte</button>
+                </div>
+                <div id="map" aria-label="CesiumJS kaart"></div>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <strong>KML-kaardid</strong>
+                </div>
+                <nav class="footer-nav" aria-label="Jaluse navigatsioon">
+                    <a href="/leaflet">LeafletJS</a>
+                    <a href="/openlayers">OpenLayers</a>
+                    <a href="/cesium">CesiumJS</a>
+                    <a href="/comparison">Võrdlus</a>
+                </nav>
+                <p class="footer-copyright">Nikita Litvinenko 2026</p>
+            </div>
+        </footer>
+
+        <script src="../scripts/cesium.js"></script>
+    </body>
+</html>

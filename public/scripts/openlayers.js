@@ -9,7 +9,9 @@ function setupOpenLayers()
             new ol.layer.Vector({
                 source: new ol.source.Vector({
                     url: '../data/map.kml',
-                    format: new ol.format.KML()
+                    format: new ol.format.KML({
+                        iconUrlFunction: () => '../images/marker.svg'
+                    })
                 })
             })
         ],

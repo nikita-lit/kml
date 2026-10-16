@@ -5,12 +5,12 @@ const port = 3000;
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-
 const pages = {
     '/': 'index.html',
     '/leaflet': 'leaflet.html',
     '/openlayers': 'openlayers.html',
-    '/googlemaps': 'googlemaps.html'
+    '/cesium': 'cesium.html',
+    '/comparison': 'comparison.html'
 };
 
 for (const route in pages)

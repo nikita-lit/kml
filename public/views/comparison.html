@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="et">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LeafletJS ja OpenLayers võrdlus</title>
+
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="/">Avaleht</a>
+                <a href="/leaflet">LeafletJS</a>
+                <a href="/openlayers">OpenLayers</a>
+                <a href="/cesium">CesiumJS</a>
+                <a href="/comparison">Võrdlus</a>
+            </nav>
+        </header>
+
+        <main class="comparison">
+            <h1 id="comparison-title">LeafletJS ja OpenLayers võrdlus</h1>
+            <p>Mõlemad kaardid kasutavad sama <strong>map.kml</strong> faili ja OpenStreetMapi aluskaarti.</p>
+
+            <div class="table-container">
+                <table aria-labelledby="comparison-title">
+                    <thead>
+                        <tr>
+                            <th scope="col">Võrdlus</th>
+                            <th scope="col"><a href="/leaflet">LeafletJS</a></th>
+                            <th scope="col"><a href="/openlayers">OpenLayers</a></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">KML-i laadimine</th>
+                            <td>Vajab leaflet-omnivore lisateeki.</td>
+                            <td>Sisseehitatud KML-lugeja.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Kaardi vaade</th>
+                            <td>Kohandub automaatselt KML-i objektide järgi.</td>
+                            <td>Kindel keskpunkt Tallinnas ja suumitase 13.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Punktid</th>
+                            <td>Tavalised Leafleti markerid.</td>
+                            <td>Kohalik SVG-marker ja KML-is määratud värvid.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Jooned ja alad</th>
+                            <td>Kasutavad Leafleti vaikestiili.</td>
+                            <td>Kasutavad KML-is määratud stiile.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Objekti nimi</th>
+                            <td>Klõpsamisel avaneb hüpikaken.</td>
+                            <td>Klõpsamisel kuvatakse kohandatud infokast.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Praktiline erinevus</th>
+                            <td>Lühem seadistuskood, kuid KML-i jaoks on vaja lisateeki.</td>
+                            <td>Rohkem seadistuskoodi, kuid KML-tugi on juba olemas.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2>CesiumJS</h2>
+            <p><a href="/cesium">CesiumJS kaart</a> kuvab sama KML-faili 3D-gloobusel.
+                Kasutusel on OpenStreetMapi aluskaart. Objekte saab valida klõpsuga, vahetada 2D ja 3D vaadet
+                ning tuua kogu teekonna ühe nupuga tagasi vaatesse.</p>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <strong>KML-kaardid</strong>
+                </div>
+                <nav class="footer-nav" aria-label="Jaluse navigatsioon">
+                    <a href="/leaflet">LeafletJS</a>
+                    <a href="/openlayers">OpenLayers</a>
+                    <a href="/cesium">CesiumJS</a>
+                    <a href="/comparison">Võrdlus</a>
+                </nav>
+                <p class="footer-copyright">Nikita Litvinenko 2026</p>
+            </div>
+        </footer>
+    </body>
+</html>
