@@ -20,8 +20,7 @@ async function setupCesium()
 
     const response = await fetch('../data/map.kml');
     const kml = new DOMParser().parseFromString(await response.text(), 'text/xml');
-
-    // Keep the KML colors and use the same local marker as OpenLayers.
+    
     const markerUrl = new URL('../images/marker.svg', window.location.href).href;
     kml.querySelectorAll('Icon href').forEach(function(icon) {
         icon.textContent = markerUrl;
